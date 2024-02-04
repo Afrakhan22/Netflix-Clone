@@ -53,6 +53,15 @@ nav button{
     margin-left: 10px;
 }
 
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
 .header-content h1{
     font-size: 60px;
     line-height: 70px;
@@ -225,4 +234,27 @@ input[type="radio"]{
            font-size: 14px;
            margin-top: 20px;
            margin-bottom: 10px;
+}
+
+
+/* media-queries for small screen  */
+@media only screen and (max-width:600px)
+{
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav.language-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 50px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
 }
